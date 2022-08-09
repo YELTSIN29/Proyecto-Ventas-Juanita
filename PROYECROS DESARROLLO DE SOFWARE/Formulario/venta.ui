@@ -341,7 +341,7 @@ background-color:rgb(255, 255, 255);
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
                <property name="currentIndex">
-                <number>1</number>
+                <number>5</number>
                </property>
                <widget class="QWidget" name="pagRegistroCliente">
                 <widget class="QLineEdit" name="txtDNI">
@@ -619,7 +619,7 @@ padding-bottom:7px;
                   <rect>
                    <x>320</x>
                    <y>640</y>
-                   <width>201</width>
+                   <width>191</width>
                    <height>51</height>
                   </rect>
                  </property>
@@ -691,7 +691,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>550</y>
+                   <y>440</y>
                    <width>121</width>
                    <height>41</height>
                   </rect>
@@ -710,7 +710,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>170</y>
+                   <y>130</y>
                    <width>171</width>
                    <height>41</height>
                   </rect>
@@ -729,7 +729,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>420</y>
+                   <y>320</y>
                    <width>161</width>
                    <height>41</height>
                   </rect>
@@ -748,7 +748,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>290</y>
+                   <y>190</y>
                    <width>101</width>
                    <height>41</height>
                   </rect>
@@ -763,57 +763,12 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <string>Producto:</string>
                  </property>
                 </widget>
-                <widget class="QLabel" name="label_22">
-                 <property name="geometry">
-                  <rect>
-                   <x>70</x>
-                   <y>230</y>
-                   <width>221</width>
-                   <height>41</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Verdana</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Codigo  del producto:</string>
-                 </property>
-                </widget>
-                <widget class="QLineEdit" name="txtCodProducto">
-                 <property name="geometry">
-                  <rect>
-                   <x>300</x>
-                   <y>220</y>
-                   <width>151</width>
-                   <height>41</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-background-color: rgb(255, 255, 255);
-border:none;
-border-bottom:2px solid rgb(255, 0, 127);
-padding-bottom:7px;
-}</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                 </property>
-                </widget>
                 <widget class="QLineEdit" name="txtDNIcliente">
                  <property name="geometry">
                   <rect>
                    <x>250</x>
-                   <y>160</y>
-                   <width>201</width>
+                   <y>130</y>
+                   <width>221</width>
                    <height>41</height>
                   </rect>
                  </property>
@@ -838,7 +793,7 @@ padding-bottom:7px;
                  <property name="geometry">
                   <rect>
                    <x>70</x>
-                   <y>490</y>
+                   <y>380</y>
                    <width>111</width>
                    <height>41</height>
                   </rect>
@@ -853,11 +808,11 @@ padding-bottom:7px;
                   <string>Cantidad:</string>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_9">
+                <widget class="QLineEdit" name="txtPrecioU">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>410</y>
+                   <x>250</x>
+                   <y>320</y>
                    <width>221</width>
                    <height>41</height>
                   </rect>
@@ -879,11 +834,11 @@ padding-bottom:7px;
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_19">
+                <widget class="QLineEdit" name="txtCantidad">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>480</y>
+                   <x>250</x>
+                   <y>380</y>
                    <width>221</width>
                    <height>41</height>
                   </rect>
@@ -905,11 +860,11 @@ padding-bottom:7px;
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_20">
+                <widget class="QLineEdit" name="txtDescuento">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>540</y>
+                   <x>250</x>
+                   <y>440</y>
                    <width>221</width>
                    <height>41</height>
                   </rect>
@@ -953,11 +908,11 @@ padding-bottom:7px;
                   <set>Qt::AlignCenter</set>
                  </property>
                 </widget>
-                <widget class="QComboBox" name="comboBox">
+                <widget class="QComboBox" name="cbxProducto">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>300</y>
+                   <x>250</x>
+                   <y>190</y>
                    <width>231</width>
                    <height>31</height>
                   </rect>
@@ -1023,7 +978,7 @@ padding-bottom:7px;</string>
                   </property>
                  </item>
                 </widget>
-                <widget class="QPushButton" name="pushButton_8">
+                <widget class="QPushButton" name="btnAgregarPedido">
                  <property name="geometry">
                   <rect>
                    <x>110</x>
@@ -1075,52 +1030,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <bool>true</bool>
                  </property>
                 </widget>
-                <widget class="QLabel" name="label_12">
-                 <property name="geometry">
-                  <rect>
-                   <x>70</x>
-                   <y>110</y>
-                   <width>171</width>
-                   <height>41</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Verdana</family>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Nro  de Pedido:</string>
-                 </property>
-                </widget>
-                <widget class="QLineEdit" name="txtNroPedido">
-                 <property name="geometry">
-                  <rect>
-                   <x>250</x>
-                   <y>100</y>
-                   <width>191</width>
-                   <height>41</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QLineEdit{
-background-color: rgb(255, 255, 255);
-border:none;
-border-bottom:2px solid rgb(255, 0, 127);
-padding-bottom:7px;
-}</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
-                 </property>
-                </widget>
-                <widget class="QPushButton" name="pushButton_13">
+                <widget class="QPushButton" name="btnLimpiarPedido">
                  <property name="geometry">
                   <rect>
                    <x>510</x>
@@ -1153,11 +1063,11 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <string>Limpiar</string>
                  </property>
                 </widget>
-                <widget class="QComboBox" name="comboBox_2">
+                <widget class="QComboBox" name="cbxPrenda">
                  <property name="geometry">
                   <rect>
-                   <x>230</x>
-                   <y>360</y>
+                   <x>250</x>
+                   <y>250</y>
                    <width>231</width>
                    <height>31</height>
                   </rect>
@@ -1247,7 +1157,7 @@ padding-bottom:7px;</string>
                   <set>Qt::AlignCenter</set>
                  </property>
                 </widget>
-                <widget class="QTableWidget" name="tableWidget">
+                <widget class="QTableWidget" name="tblListaPedido">
                  <property name="geometry">
                   <rect>
                    <x>20</x>
@@ -1300,7 +1210,7 @@ padding-bottom:7px;</string>
                   </property>
                  </column>
                 </widget>
-                <widget class="QPushButton" name="pushButton_9">
+                <widget class="QPushButton" name="btnEnviarPedido">
                  <property name="geometry">
                   <rect>
                    <x>20</x>
@@ -1330,7 +1240,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <string>Enviar Pedido</string>
                  </property>
                 </widget>
-                <widget class="QPushButton" name="pushButton_10">
+                <widget class="QPushButton" name="btnAnularPedido">
                  <property name="geometry">
                   <rect>
                    <x>590</x>
@@ -1360,7 +1270,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <string>Anular</string>
                  </property>
                 </widget>
-                <widget class="QPushButton" name="pushButton_11">
+                <widget class="QPushButton" name="btnModificarPedido">
                  <property name="geometry">
                   <rect>
                    <x>320</x>
@@ -1409,7 +1319,7 @@ background-color:qlineargradient(spread:pad, x1:1, y1:1, x2:0.06, y2:0.131227, s
                   <string>Nro Pedido:</string>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_12">
+                <widget class="QLineEdit" name="txtNumPedido">
                  <property name="geometry">
                   <rect>
                    <x>180</x>
@@ -1454,7 +1364,7 @@ padding-bottom:7px;
                   <string>Total a Pagar</string>
                  </property>
                 </widget>
-                <widget class="QLabel" name="label_16">
+                <widget class="QLabel" name="txtTotalPagar">
                  <property name="geometry">
                   <rect>
                    <x>600</x>
@@ -1529,7 +1439,7 @@ padding-bottom:7px;</string>
                   </rect>
                  </property>
                 </widget>
-                <widget class="QTableWidget" name="tableWidget_2">
+                <widget class="QTableWidget" name="tblConsultaPedido">
                  <property name="geometry">
                   <rect>
                    <x>20</x>
@@ -1596,7 +1506,7 @@ padding-bottom:7px;</string>
                   <string>DNI del cliente:</string>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_22">
+                <widget class="QLineEdit" name="txtConsultaDniPedido">
                  <property name="geometry">
                   <rect>
                    <x>220</x>
@@ -1663,7 +1573,7 @@ padding-bottom:7px;
                   <string>Nro Pedido:</string>
                  </property>
                 </widget>
-                <widget class="QLineEdit" name="lineEdit_13">
+                <widget class="QLineEdit" name="txtConsultaNumPedido">
                  <property name="geometry">
                   <rect>
                    <x>570</x>
@@ -1689,7 +1599,7 @@ padding-bottom:7px;
                   <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
                  </property>
                 </widget>
-                <widget class="QPushButton" name="pushButton_12">
+                <widget class="QPushButton" name="btnConsultaPedido">
                  <property name="geometry">
                   <rect>
                    <x>310</x>
