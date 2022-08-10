@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic
 
 from Vista.ventanaAdmi import VentanaAdmi
 from Vista.ventanaCaja import VentanaCaja
-from Vista.ventanadescapacha import VentanaAlmacen
+from Vista.ventanaAlmacen import VentanaAlmacen
 from Vista.ventanaVenta import VentanaVenta
 
 
@@ -35,17 +35,13 @@ class Login(QtWidgets.QMainWindow):
                   vprincipal.show()
                   self.Limpiar()
             elif usuario == "Venta" and contraseña == "4444":
-                  self.close()
+                  #self.close()
                   vprincipal = VentanaVenta(self)
-                  vprincipal.show() 
+                  vprincipal.show()
+                  self.Limpiar()
             else:
                   self.lblError.setText(str("Contraseña Incorrecta"))
                   self.Limpiar()   
-                  '''else:
-                        mensaje = QtWidgets.QMessageBox()
-                        mensaje.setWindowTitle("Punto de Venta")
-                        mensaje.setText("Los datos ingresados son incorrectos...!!!")
-                        mensaje.setIcon(QtWidgets.QMessageBox.Information)'''
                         
       def Limpiar(self):
             self.txtPassword.setText("")

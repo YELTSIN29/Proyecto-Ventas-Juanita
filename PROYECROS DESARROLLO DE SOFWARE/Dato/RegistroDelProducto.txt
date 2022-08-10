@@ -1,0 +1,6 @@
+11111,Casaca,cuero,12,23
+2222,Polo,azul ,12,5
+4444,Gorra,choro,4,6
+5555,Chompa,invierno,5,56
+6666,Chompa,oscura,4,45
+34324,Medias,ROJA,12,5
