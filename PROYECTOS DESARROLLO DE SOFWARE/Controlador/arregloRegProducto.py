@@ -1,11 +1,11 @@
-from Controlador.regProducto import RegProducto
+from Controlador.registroProducto import RegProducto
 
 class ArregloRegProducto:
 
 
       def __init__(self):
             self.dataProducto = []
-            self.cargar()
+            self.cargarProducto()
 
       def adicionaRegProducto(self, objProducto):
             self.dataProducto.append(objProducto)
@@ -16,9 +16,9 @@ class ArregloRegProducto:
       def tamañoArregloRegProducto(self):
             return len(self.dataProducto)
 
-      def buscarRegProducto(self, dni):
+      def buscarRegProducto(self, producto):
             for i in range(self.tamañoArregloRegProducto()):
-                  if dni == self.dataProducto[i].getRegistroDNI():
+                  if producto == self.dataProducto[i].getCodProducto():
                         return i
             return -1
 
@@ -32,8 +32,8 @@ class ArregloRegProducto:
             return self.dataProducto
       
 
-      def cargar(self):
-            archivo = open("Dato/RegistroDelProducto.txt", "r", encoding = "utf-8")
+      def cargarProducto(self):
+            archivo = open("Dato/RegistroDelProducto.txt", "w+", encoding = "utf-8")
             for linea in archivo.readlines():
                   columna = str(linea).split(",")
                   codProducto = columna[0]
@@ -41,11 +41,11 @@ class ArregloRegProducto:
                   descripcion = columna[2]
                   cantidad = columna[3]
                   precio = columna[4].strip()
-                  objProducto = RegProducto(codProducto,categoria, descripcion, cantidad, precio)
-                  self.adicionaRegProducto(objProducto)
+                  objProd = RegProducto(codProducto,categoria, descripcion, cantidad, precio)
+                  self.adicionaRegProducto(objProd)
             archivo.close()
 
-      def grabar(self):
+      def grabarProducto(self):
             archivo = open("Dato/RegistroDelProducto.txt", "w+", encoding = "utf-8")
             for i in range(self.tamañoArregloRegProducto()):
                   archivo.write(str(self.devolverRegProducto(i).getCodProducto()) + ","

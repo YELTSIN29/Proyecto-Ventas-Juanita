@@ -1,11 +1,13 @@
 from Controlador.registroCliente import Registro
 
+
+
 class ArregloVentas:
 
 
       def __init__(self):
             self.dataClientes = []
-            self.cargar()
+            self.cargarCliente()
 
       def adicionaCliente(self, objCli):
             self.dataClientes.append(objCli)
@@ -32,7 +34,7 @@ class ArregloVentas:
             return self.dataClientes
       
 
-      def cargar(self):
+      def cargarCliente(self):
             archivo = open("Dato/RegistroDelCliente.txt", "r", encoding = "utf-8")
             for linea in archivo.readlines():
                   columna = str(linea).split(",")
@@ -46,7 +48,7 @@ class ArregloVentas:
                   self.adicionaCliente(objCli)
             archivo.close()
 
-      def grabar(self):
+      def grabarCliente(self):
             archivo = open("Dato/RegistroDelCliente.txt", "w+", encoding = "utf-8")
             for i in range(self.tamañoArregloCliente()):
                   archivo.write(str(self.devolverCliente(i).getRegistroDNI()) + ","
@@ -56,4 +58,6 @@ class ArregloVentas:
                   + str(self.devolverCliente(i).getRegistroTelefono()) + ","
                   + str(self.devolverCliente(i).getRegistroCorreo()) + "\n")
             archivo.close()
-
+      
+     
+      

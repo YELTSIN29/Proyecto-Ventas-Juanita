@@ -1,14 +1,14 @@
 
 class RegProducto():
       #Atributos del Registro Producto
-      __CodProducto=""
+      __CodProducto=0
       __Categoria=""
       __Descripcion=""
       __Cantidad=0
       __Precio=0
       #Constructor
-      def __init__(self,codProcucto,categoria,descripcion,cantidad,precio):
-            self.__CodProducto=codProcucto
+      def __init__(self,codProducto,categoria,descripcion,cantidad,precio):
+            self.__CodProducto=codProducto
             self.__Categoria=categoria
             self.__Descripcion=descripcion
             self.__Cantidad=cantidad

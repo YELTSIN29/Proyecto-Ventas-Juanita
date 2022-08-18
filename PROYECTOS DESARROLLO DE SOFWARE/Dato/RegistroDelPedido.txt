@@ -1,0 +1,7 @@
+71663282,Producto 2,Producto 5,5,2,10%
+71663282,Producto 2,Producto 5,5,2,10%
+71663282,Producto 2,Producto 5,5,2,10%
+34,Producto 3,Producto 6,5,43,4
+34,Producto 3,Producto 6,5,43,4
+,Producto 3,Producto 6,,,
+343432,Producto 5,Producto 3,3,45,0

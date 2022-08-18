@@ -1,6 +1,6 @@
 class Registro():
       #Atributos de la pagina cliente
-      __RegistroDNI = ""
+      __RegistroDNI = 0
       __RegistroNombre = ""
       __RegistroApellidoP = ""
       __RegistroApellidoM = ""

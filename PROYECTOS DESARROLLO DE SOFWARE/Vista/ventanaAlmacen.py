@@ -1,5 +1,5 @@
 from PyQt5 import QtWidgets, uic
-from Controlador.regProducto import RegProducto
+from Controlador.registroProducto import RegProducto
 from Controlador.arregloRegProducto import ArregloRegProducto
 
 argpro=ArregloRegProducto()
@@ -37,9 +37,13 @@ class VentanaAlmacen(QtWidgets.QMainWindow):
             return self.txtRegPrecioUni.text()
       
       def registrar(self):
-            objProducto = RegProducto(self.obtenerCodProducto(), self.obtenerCategoriaProducto(), self.obtenerDescripcionProducto(),self.obtenerCantidadProducto(), self.obtenerPrecioProducto())
+            objProducto = RegProducto(self.obtenerCodProducto(),
+                        self.obtenerCategoriaProducto(),
+                        self.obtenerDescripcionProducto(),
+                        self.obtenerCantidadProducto(),
+                        self.obtenerPrecioProducto())
             argpro.adicionaRegProducto(objProducto)
-            argpro.grabar()
+            argpro.grabarProducto()
             self.limpiarControles()
             
       def limpiarControles(self):
