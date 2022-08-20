@@ -1,7 +1,15 @@
-71663282,Producto 2,Producto 5,5,2,10%
-71663282,Producto 2,Producto 5,5,2,10%
-71663282,Producto 2,Producto 5,5,2,10%
-34,Producto 3,Producto 6,5,43,4
-34,Producto 3,Producto 6,5,43,4
-,Producto 3,Producto 6,,,
-343432,Producto 5,Producto 3,3,45,0
+343432,Producto 5,Producto 3,45,3,0
+4354356,Producto 3,Producto 4,56,45,0
+4354356,Producto 3,Producto 4,56,45,0
+4354356,Producto 3,Producto 4,56,45,0
+4354356,Producto 3,Producto 4,56,45,0
+435435,Producto 3,Producto 4,5,8,9
+324324,Producto 2,Producto 2,34,34,4
+343,Producto 2,Producto 5,56,3,5
+99999999,Producto 5,Producto 4,5,3,0
+666666666,Producto 5,Producto 4,5,3,0
+dvfvg,Producto 2,Producto 6,4,5,0
+,[Lista],[Lista],,,
+,[Lista],[Lista],,,
+,[Lista],[Lista],,,
+343434,Camisas,Estampado,2,34,0

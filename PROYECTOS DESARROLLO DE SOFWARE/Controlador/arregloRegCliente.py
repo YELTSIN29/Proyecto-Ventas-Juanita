@@ -1,4 +1,4 @@
-from Controlador.registroCliente import Registro
+from Controlador.registroCliente import RegistroCliente
 
 
 
@@ -44,7 +44,7 @@ class ArregloVentas:
                   apellidoM = columna[3]
                   telefono = columna[4]
                   correo = columna[5].strip()
-                  objCli = Registro(dni,nombre, apellidoP, apellidoM, telefono,correo)
+                  objCli = RegistroCliente(dni,nombre, apellidoP, apellidoM, telefono,correo)
                   self.adicionaCliente(objCli)
             archivo.close()
 

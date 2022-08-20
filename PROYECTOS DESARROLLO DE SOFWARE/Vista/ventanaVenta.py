@@ -1,6 +1,6 @@
 from PyQt5 import QtWidgets, uic
 from Controlador.arregloRegCliente import ArregloVentas
-from Controlador.registroCliente import Registro
+from Controlador.registroCliente import RegistroCliente
 #from Controlador.arregloRegProducto import ArregloRegProducto
 from Controlador.registroPedido import RegPedido
 #from Controlador.registroProducto import RegProducto
@@ -43,6 +43,27 @@ class VentanaVenta(QtWidgets.QMainWindow):
       
       def obtenerTelefono(self):
             return self.txtTelefono.text()
+      def validaCliente(self):
+            if self.txtDNI.text() == "":
+                  self.txtDNI.setFocus()
+                  return "DNI del cliente...!!!"
+            elif self.txtNombre.text() == "":
+                  self.txtNombre.setFocus()
+                  return "Nombre del cliente...!!!"
+            elif self.txtApellidoP.text() == "":
+                  self.txtApellidoP.setFocus()
+                  return "Apellido Paterno del cliente...!!!"
+            elif self.txtApellidoM.text() == "":
+                  self.txtApellidoM.setFocus()
+                  return "Apellido Materno del cliente...!!!"
+            elif self.txtCorreo.text() == "":
+                  self.txtCorreo.setFocus()
+                  return "Dirección del cliente...!!!"
+            elif self.txtTelefono.text() == "":
+                  self.txtTelefono.setFocus()
+                  return "Teléfono del cliente...!!!"
+            else:
+                  return ""
       
       #obtener registro del pedido
       def obtenerPedidoDNI(self):
@@ -63,28 +84,51 @@ class VentanaVenta(QtWidgets.QMainWindow):
       def obtenerDescuento(self):
             return self.txtDescuento.text()
       
-      def registrarCliente(self):
-            objCli = Registro(self.obtenerDni(),
-                              self.obtenerNombre(), 
-                              self.obtenerApellidoP(), 
-                              self.obtenerApellidoM(), 
-                              self.obtenerCorreo(), 
-                              self.obtenerTelefono())
-            aCli.adicionaCliente(objCli)
-            aCli.grabarCliente()
-            self.limpiarControles()
+      def validaPedido(self):
+            if self.txtDNIcliente.text() == "":
+                  self.txtDNIcliente.setFocus()
+                  return "DNI del cliente...!!!"
+            elif self.txtPrecioU.text() == "":
+                  self.txtPrecioU.setFocus()
+                  return "Precio del Producto...!!!"
+            elif self.txtCantidad.text() == "":
+                  self.txtCantidad.setFocus()
+                  return "Cantidad del Producto...!!!"
+            elif self.txtDescuento.text() == "":
+                  self.txtDescuento.setFocus()
+                  return "Descuento del producto...!!!"
+            else:
+                  return ""
       
+      def registrarCliente(self):
+            if self.validaCliente() == "":
+                  objCli = RegistroCliente(self.obtenerDni(),
+                                    self.obtenerNombre(), 
+                                    self.obtenerApellidoP(), 
+                                    self.obtenerApellidoM(), 
+                                    self.obtenerCorreo(), 
+                                    self.obtenerTelefono())
+                  aCli.adicionaCliente(objCli)
+                  aCli.grabarCliente()
+                  self.limpiarControles()
+            else:
+                  QtWidgets.QMessageBox.information(self, "Registro del Cliente", 
+                                     "Error en " + self.validaCliente(), QtWidgets.QMessageBox.Ok)
       def registrarpedido(self):
-            objPedido = RegPedido(self.obtenerPedidoDNI(), 
-                              self.obtenerPedidoProducto(), 
-                              self.obtenerPedidoDescripcion(), 
-                              self.obtenerPrecio(), 
-                              self.obtenerCantidad(), 
-                              self.obtenerDescuento())
-            aPedi.adicionaRegPedido(objPedido)
-            aPedi.grabarPedido()
-            self.limpiarControles()
-            
+            if self.validaPedido() == "":
+                  objPedido = RegPedido(self.obtenerPedidoDNI(), 
+                                    self.obtenerPedidoProducto(), 
+                                    self.obtenerPedidoDescripcion(), 
+                                    self.obtenerPrecio(), 
+                                    self.obtenerCantidad(), 
+                                    self.obtenerDescuento())
+                  aPedi.adicionaRegPedido(objPedido)
+                  aPedi.grabarPedido()
+                  self.limpiarControlesPedido()
+                  self.listarRegPedido()
+            else:
+                  QtWidgets.QMessageBox.information(self, "Registro del Pedido", 
+                                     "Error en " + self.validaPedido(), QtWidgets.QMessageBox.Ok)
       def limpiarControles(self):
             self.txtDNI.clear()
             self.txtNombre.clear()
@@ -101,3 +145,15 @@ class VentanaVenta(QtWidgets.QMainWindow):
             self.txtCorreo.clear()
             self.txtTelefono.clear()
             
+      def listarRegPedido(self):
+            self.tblListaPedido.setRowCount(aPedi.tamañoArregloRegPedido())
+            self.tblListaPedido.setColumnCount(6)
+            #Cabecera
+            self.tblListaPedido.verticalHeader().setVisible(False)
+            for i in range(0, aPedi.tamañoArregloRegPedido()):
+                  self.tblListaPedido.setItem(i, 0, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getPedidoDNI()))
+                  self.tblListaPedido.setItem(i, 1, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getPedidoProducto()))
+                  self.tblListaPedido.setItem(i, 2, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getPedidoDescripcion()))
+                  self.tblListaPedido.setItem(i, 3, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getCantidad()))
+                  self.tblListaPedido.setItem(i, 4, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getPrecio()))
+                  self.tblListaPedido.setItem(i, 5, QtWidgets.QTableWidgetItem(aPedi.devolverRegPedido(i).getDescuento()))

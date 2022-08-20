@@ -939,42 +939,42 @@ padding-bottom:7px;</string>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 1</string>
+                   <string>Abrigos</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 2</string>
+                   <string>Camisas</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 3</string>
+                   <string>Casacas</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 4</string>
+                   <string>Pantalon</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 5</string>
+                   <string>Chompa</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 6</string>
+                   <string>Medias</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 7</string>
+                   <string>Polo</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 8</string>
+                   <string>Zapatos</string>
                   </property>
                  </item>
                 </widget>
@@ -1094,42 +1094,42 @@ padding-bottom:7px;</string>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 1</string>
+                   <string>Algodon</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 2</string>
+                   <string>Brillos</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 3</string>
+                   <string>Clasico</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 4</string>
+                   <string>Estampado</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 5</string>
+                   <string>Franela</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 6</string>
+                   <string>Rasgado</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 7</string>
+                   <string>Seda</string>
                   </property>
                  </item>
                  <item>
                   <property name="text">
-                   <string>Producto 8</string>
+                   <string>Polar</string>
                   </property>
                  </item>
                 </widget>

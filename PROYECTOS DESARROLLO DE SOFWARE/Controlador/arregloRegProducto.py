@@ -33,15 +33,17 @@ class ArregloRegProducto:
       
 
       def cargarProducto(self):
-            archivo = open("Dato/RegistroDelProducto.txt", "w+", encoding = "utf-8")
+            archivo = open("Dato/RegistroDelProducto.txt", "r", encoding = "utf-8")
             for linea in archivo.readlines():
                   columna = str(linea).split(",")
                   codProducto = columna[0]
                   categoria = columna[1]
                   descripcion = columna[2]
-                  cantidad = columna[3]
-                  precio = columna[4].strip()
-                  objProd = RegProducto(codProducto,categoria, descripcion, cantidad, precio)
+                  talla = columna[3]
+                  marca = columna[4]
+                  cantidad = columna[5]
+                  precio = columna[6].strip()
+                  objProd = RegProducto(codProducto,categoria, descripcion,talla,marca, cantidad, precio)
                   self.adicionaRegProducto(objProd)
             archivo.close()
 
@@ -51,6 +53,8 @@ class ArregloRegProducto:
                   archivo.write(str(self.devolverRegProducto(i).getCodProducto()) + ","
                   + str(self.devolverRegProducto(i).getCategoria()) + "," 
                   + str(self.devolverRegProducto(i).getDecripcion()) + ","
+                  + str(self.devolverRegProducto(i).getTalla()) + ","
+                  + str(self.devolverRegProducto(i).getMarca()) + ","
                   + str(self.devolverRegProducto(i).getCantidad()) + ","
                   + str(self.devolverRegProducto(i).getPrecio()) + "\n")
             archivo.close()

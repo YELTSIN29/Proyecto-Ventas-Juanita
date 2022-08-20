@@ -1,4 +1,4 @@
-class Registro():
+class RegistroCliente():
       #Atributos de la pagina cliente
       __RegistroDNI = 0
       __RegistroNombre = ""
