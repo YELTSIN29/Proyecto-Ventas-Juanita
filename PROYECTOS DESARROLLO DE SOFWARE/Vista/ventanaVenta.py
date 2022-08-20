@@ -23,6 +23,7 @@ class VentanaVenta(QtWidgets.QMainWindow):
             self.btnGuardarRgtr.clicked.connect(self.registrarCliente)
             self.btnAgregarPedido.clicked.connect(self.registrarpedido)
             self.btnLimpiarPedido.clicked.connect(self.limpiarControlesPedido)
+            self.btnEnviarPedido.clicked.connect(self.listarRegPedido)
       def Salir(self):
             self.close()
       #obtener registro del cliente      

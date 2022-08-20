@@ -1171,7 +1171,7 @@ padding-bottom:7px;</string>
                  </property>
                  <column>
                   <property name="text">
-                   <string>CODIGO</string>
+                   <string>DNI_PEDIDO</string>
                   </property>
                  </column>
                  <column>
@@ -1181,32 +1181,22 @@ padding-bottom:7px;</string>
                  </column>
                  <column>
                   <property name="text">
+                   <string>DESCRIPCION</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
                    <string>CANTIDAD</string>
                   </property>
                  </column>
                  <column>
                   <property name="text">
-                   <string>PRECIO UNITARIO</string>
+                   <string>PRECIO</string>
                   </property>
                  </column>
                  <column>
                   <property name="text">
                    <string>DESCUENTO</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>SUB TOTAL</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>IGV 18%</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>TOTAL </string>
                   </property>
                  </column>
                 </widget>

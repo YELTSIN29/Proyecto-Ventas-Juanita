@@ -1,2 +1,2 @@
-32324,Pantalon,rfbfgb,bgrbgb,s,34,2
-3434,Medias,rgfg,efrg,xl,45,23
+3434,Pantalon,polar,xl,adidas,12,24
+343243,Chompa,POLAR,ADIDAS,M,12,40
